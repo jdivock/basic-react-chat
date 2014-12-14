@@ -112,7 +112,7 @@ var ChatEntry = React.createClass({
 	render: function(){
 		return (
 			<form className="chat-entry pure-form">
-				<label>Msg:
+				<label>{this.props.user}:
 					<input
 						ref="entryMsg"
 						value={this.state.entryMsg}
@@ -139,15 +139,17 @@ var ChatEntry = React.createClass({
 var ChatWindow = React.createClass({
 	render: function(){
 		return (
-			<div className="chat-window">
-				<ChatThreads 
-					user={this.props.user}
-					chatData={this.props.chatData}
-				/>
-				<ChatEntry 
-					addMsg={this.props.addMsg}
-					user={this.props.user}
-				/>
+			<div className="chat-window-container">
+				<div className="chat-window">
+					<ChatThreads 
+						user={this.props.user}
+						chatData={this.props.chatData}
+					/>
+					<ChatEntry 
+						addMsg={this.props.addMsg}
+						user={this.props.user}
+					/>
+				</div>
 			</div>
 		);
 	}
@@ -194,15 +196,12 @@ var BasicChatApp = React.createClass({
 
     return (
       <div>
-
-      	<h3>Abby</h3>
       	<ChatWindow 
       		chatData={this.state.chatData}
       		addMsg={this.addMsg}
       		user={this.props.UserOne}
       	/>
 
-      	<h3>Bob</h3>
       	<ChatWindow 
       		chatData={this.state.chatData}
       		addMsg={this.addMsg}

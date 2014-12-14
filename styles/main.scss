@@ -2,11 +2,19 @@ body {
     margin: 1rem;
 }
 
+#basic-chat-app {
+    overflow: hidden;
+}
+
 .chat-window {
     border: 1px solid #666;
     border-radius: 3px;
-    margin-bottom: 2rem;
+    margin: 0 1rem;
     padding: 1rem;
+}
+
+.chat-window-container {
+    float: left;
     width: 50%;
 }
 
@@ -32,7 +40,9 @@ body {
 
     input {
         margin-left: .5rem;
+        width: 55%;
     }
+
     button {
         margin-left: 1rem;
     }
@@ -40,4 +50,13 @@ body {
 
 .timestamp {
     font-size: .75rem;
+}
+
+
+@media (max-width: 768px) {
+    .chat-window-container {
+        float: none;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
 }

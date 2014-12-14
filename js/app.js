@@ -14,5 +14,5 @@ window.React = React;
 
 React.renderComponent(
     <BasicChatApp UserOne="Abby" UserTwo="Bob"/>,
-    document.getElementById('BasicChatApp')
+    document.getElementById('basic-chat-app')
 );
