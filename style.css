@@ -1670,3 +1670,25 @@ striping:
   margin-bottom: 2rem;
   padding: 1rem;
   width: 50%; }
+
+.chat-thread-self {
+  color: #a4a4a4; }
+
+.chat-threads {
+  height: 10rem;
+  overflow: auto; }
+
+.chat-thread-msg {
+  padding: 0.2rem 0; }
+  .chat-thread-msg .msg {
+    padding-left: 0.25rem; }
+
+.chat-entry {
+  padding-top: 0.75rem; }
+  .chat-entry input {
+    margin-left: 0.5rem; }
+  .chat-entry button {
+    margin-left: 1rem; }
+
+.timestamp {
+  font-size: 0.75rem; }

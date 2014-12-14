@@ -1,5 +1,5 @@
 body {
-	margin: 1rem;
+    margin: 1rem;
 }
 
 .chat-window {
@@ -8,4 +8,36 @@ body {
     margin-bottom: 2rem;
     padding: 1rem;
     width: 50%;
+}
+
+.chat-thread-self {
+    color: #a4a4a4;
+}
+
+.chat-threads {
+    height: 10rem;
+    overflow: auto;
+}
+
+.chat-thread-msg {
+    padding: .2rem 0;
+
+    .msg {
+        padding-left: .25rem;
+    }
+}
+
+.chat-entry {
+    padding-top: .75rem;
+
+    input {
+        margin-left: .5rem;
+    }
+    button {
+        margin-left: 1rem;
+    }
+}
+
+.timestamp {
+    font-size: .75rem;
 }

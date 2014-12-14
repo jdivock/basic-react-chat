@@ -13,6 +13,6 @@ require('../styles/main.scss');
 window.React = React;
 
 React.renderComponent(
-    <BasicChatApp />,
+    <BasicChatApp UserOne="Abby" UserTwo="Bob"/>,
     document.getElementById('BasicChatApp')
 );

@@ -21,6 +21,7 @@ module.exports = {
         }]
     },
     plugins: [
+        new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/), // without this moment pulls in every locale
         new ExtractTextPlugin("style.css", {
             allChunks: true
         })
