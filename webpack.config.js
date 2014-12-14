@@ -20,6 +20,11 @@ module.exports = {
             loader: ExtractTextPlugin.extract("style-loader", 'css-loader!sass-loader?outputStyle=expanded')
         }]
     },
+    plugins: [
+        new ExtractTextPlugin("style.css", {
+            allChunks: true
+        })
+    ],
     resolve: {
         extensions: ['', '.js', '.jsx']
     }

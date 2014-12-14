@@ -1,0 +1,5 @@
+linters:
+  Indentation:
+    width: 4
+  SelectorDepth:
+    max_depth: 4

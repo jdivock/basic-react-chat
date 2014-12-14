@@ -1661,4 +1661,12 @@ striping:
 }
 .pure-table-horizontal tbody > tr:last-child td {
     border-bottom-width: 0;
-}
+}body {
+  margin: 1rem; }
+
+.chat-window {
+  border: 1px solid #666;
+  border-radius: 3px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  width: 50%; }
