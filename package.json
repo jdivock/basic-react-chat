@@ -1,13 +1,22 @@
 {
   "name": "basic-chat",
   "version": "0.0.1",
-  "description": "Basic FE chat with react/flux",
-  "main": "js/app.js",
+  "description": "Basic FE chat with react",
+  "main": "app.js",
+  "engines": {
+    "node": "0.10.x"
+  },
   "dependencies": {
     "express": "^4.10.6",
+    "debug": "^2.1.0",
+    "css-loader": "^0.9.0",
     "flux": "^2.0.0",
     "path": "^0.4.9",
     "react": "~0.12.1",
+    "jsx-loader": "^0.12.2",
+    "moment": "^2.8.4",
+    "sass-loader": "^0.3.1",
+    "style-loader": "^0.8.2",
     "extract-text-webpack-plugin": "^0.3.5",
     "webpack": "^1.4.13"
   },
