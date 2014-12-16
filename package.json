@@ -4,7 +4,9 @@
   "description": "Basic FE chat with react/flux",
   "main": "js/app.js",
   "dependencies": {
+    "express": "^4.10.6",
     "flux": "^2.0.0",
+    "path": "^0.4.9",
     "react": "~0.12.1"
   },
   "devDependencies": {
@@ -18,7 +20,8 @@
     "webpack": "^1.4.13"
   },
   "scripts": {
-    "start": "webpack -wc",
+    "postinstall": "webpack -p",
+    "dev": "webpack -wc",
     "build": "webpack -p"
   },
   "author": "Jason Divock"

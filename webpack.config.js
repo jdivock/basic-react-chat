@@ -4,9 +4,9 @@ var webpack = require('webpack'),
 
 module.exports = {
     cache: true,
-    entry: './js/app',
+    entry: './public/js/app',
     output: {
-        filename: 'bundle.js'
+        filename: './public/bundle.js'
     },
     module: {
         loaders: [{
@@ -22,7 +22,7 @@ module.exports = {
     },
     plugins: [
         new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/), // without this moment pulls in every locale
-        new ExtractTextPlugin("style.css", {
+        new ExtractTextPlugin('./public/style.css', {
             allChunks: true
         })
     ],
