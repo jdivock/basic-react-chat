@@ -8,6 +8,7 @@
     "flux": "^2.0.0",
     "path": "^0.4.9",
     "react": "~0.12.1",
+    "extract-text-webpack-plugin": "^0.3.5",
     "webpack": "^1.4.13"
   },
   "devDependencies": {
