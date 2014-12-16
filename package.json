@@ -2,7 +2,7 @@
   "name": "basic-chat",
   "version": "0.0.1",
   "description": "Basic FE chat with react",
-  "main": "app.js",
+  "main": "server.js",
   "engines": {
     "node": "0.10.x"
   },
